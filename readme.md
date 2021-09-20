@@ -120,8 +120,7 @@ by appending option, e.g. `--tasks VCMR VR` where only VCMR and VR are evaluated
 
 Below is one example of inference CONQUER which produce the best performance on paper.
 
-2.1. Download the trained model
-Download [tvr-conquer_general_paper_performance.tar.gz](https://drive.google.com/file/d/1ylKpgtkXzxPhko9RKpshCKdxA6Lw5zYj/view?usp=sharing) (173 MB). 
+2.1. Download the trained model [tvr-conquer_general_paper_performance.tar.gz](https://drive.google.com/file/d/1ylKpgtkXzxPhko9RKpshCKdxA6Lw5zYj/view?usp=sharing) (173 MB). 
 After downloading the trained model, extract it to the current directory:
 ```
 tar zxvf tvr-conquer_general_paper_performance.tar.gz
