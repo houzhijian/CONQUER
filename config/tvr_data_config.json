@@ -1,0 +1,15 @@
+{
+  "dset_name": "tvr",
+  "root_path": "/home/zjhou3/tvr_feature_release",
+  "desc_bert_path": "sub_query_feature/tvr_query_pretrained_w_sub_query",
+  "sub_bert_path": "sub_query_feature/tvr_sub_pretrained_w_sub_query_max_cl-1.5",
+  "vid_feat_path": "video_feature/resnet_slowfast_1.5",
+  "ctx_mode": "visual_sub",
+  "train_data_path": "data/tvr_train_select100_release.jsonl",
+  "eval_data_path": "data/tvr_val_release.jsonl",
+  "test_data_path": "data/tvr_test_public_release.jsonl",
+  "train_first_VR_ranklist_path": "data/train_select100_top2000",
+  "eval_first_VR_ranklist_path_hero": "data/tvr_val_top100_hero",
+  "test_public_first_VR_ranklist_path_hero": "data/tvr_test_public_top100_hero",
+  "video_duration_idx_path": "data/tvr_video2dur_idx.json"
+}
