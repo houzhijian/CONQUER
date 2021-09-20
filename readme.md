@@ -29,12 +29,12 @@ cd CONQUER
 
 2 . Prepare feature files and data
 
-Download [tvr_feature_release.tar.gz](https://drive.google.com/file/d/1ylKpgtkXzxPhko9RKpshCKdxA6Lw5zYj/view?usp=sharing) (21GB). 
-After downloading the feature file, extract it to the directory:
+Download [tvr_feature_release.tar.gz](https://drive.google.com/file/d/1DFnMNH-oi6-cZbl1coXqa_KjtsIsObxG/view?usp=sharing) (21GB). 
+After downloading the feature file, extract it to the **YOUR DATA STORAGE** directory:
 ```
 tar zxvf path/to/tvr_feature_release.tar.gz 
 ```
-You should be able to see `tvr_feature_release` under the directory. 
+You should be able to see `tvr_feature_release` under the **YOUR DATA STORAGE** directory. 
 
 It contains visual features (ResNet, SlowFast) obtained from [HERO](https://github.com/linjieli222/HERO/) authors and text features (subtitle and query, from fine-tuned RoBERTa) obtained from [XML](https://github.com/jayleicn/TVRetrieval) authors. 
 You can refer to the code to learn details on how the features are extracted: 
@@ -139,7 +139,7 @@ a higher R@5 and R@10 score empirically.
 If you find this code useful for your research, please cite our paper:
 ```
 @inproceedings{hou2020conquer,
-  title={CONQUER: Contextual Query-aware Ranking forVideo Corpus Moment Retrieval},
+  title={CONQUER: Contextual Query-aware Ranking for Video Corpus Moment Retrieval},
   author={Hou, Zhijian and Ngo, Chong-Wah and Chan, Wing-Kwong},
   booktitle={MultiMedia},
   year={2021}
