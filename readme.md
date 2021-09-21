@@ -30,11 +30,11 @@ cd CONQUER
 2 . Prepare feature files and data
 
 Download [tvr_feature_release.tar.gz](https://drive.google.com/file/d/1DFnMNH-oi6-cZbl1coXqa_KjtsIsObxG/view?usp=sharing) (21GB). 
-After downloading the feature file, extract it to the **YOUR DATA STORAGE** directory:
+After downloading the feature file, extract it to **YOUR DATA STORAGE** directory:
 ```
 tar zxvf path/to/tvr_feature_release.tar.gz 
 ```
-You should be able to see `tvr_feature_release` under the **YOUR DATA STORAGE** directory. 
+You should be able to see `tvr_feature_release` under **YOUR DATA STORAGE** directory. 
 
 It contains visual features (ResNet, SlowFast) obtained from [HERO](https://github.com/linjieli222/HERO/) authors and text features (subtitle and query, from fine-tuned RoBERTa) obtained from [XML](https://github.com/jayleicn/TVRetrieval) authors. 
 You can refer to the code to learn details on how the features are extracted: 
@@ -139,7 +139,7 @@ If you find this code useful for your research, please cite our paper:
 ```
 @inproceedings{hou2020conquer,
   title={CONQUER: Contextual Query-aware Ranking for Video Corpus Moment Retrieval},
-  author={Hou, Zhijian and Ngo, Chong-Wah and Chan, Wing-Kwong},
+  author={Zhijian Hou, Chong-Wah Ngo, Wing-Kwong Chan},
   booktitle={MultiMedia},
   year={2021}
 }
@@ -152,7 +152,7 @@ This code borrowed components from the following projects:
 [HuggingFace](https://github.com/huggingface/transformers), 
 [MMT](https://github.com/gabeur/mmt), 
 [MME](https://github.com/antoine77340/Mixture-of-Embedding-Experts). 
-we thank the authors for open-sourcing these great projects!
+We thank the authors for open-sourcing these great projects!
 
 ## Contact
 zjhou3-c [at] my.cityu.edu.hk
