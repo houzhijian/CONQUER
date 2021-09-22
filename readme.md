@@ -130,7 +130,7 @@ You should be able to see `results/tvr-conquer_general_paper_performance` under 
 
 2.2. Perform inference on validation split
 ```
-bash scripts/inference.sh tvr-conquer_general_paper_perfomance 0 --nms_thd 0.7
+bash scripts/inference.sh tvr-conquer_general_paper_performance 0 --nms_thd 0.7
 ```
 We use non-maximum suppression (NMS) and set the threshold as 0.7, because NMS can contribute to
 a higher R@5 and R@10 score empirically.
