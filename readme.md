@@ -64,7 +64,7 @@ pip install easydict lmdb msgpack msgpack_numpy
 ```
 
 ### Training and Inference
-*NOTE*: Currently only support train and inference using one gpu.
+*NOTE*: Currently only support train and inference using one gpu. 
 
 We give examples on how to perform training and inference for our CONQUER model.
 
@@ -83,6 +83,7 @@ Below are four examples of training CONQUER when
 ```
 bash scripts/train_general.sh general 0 
 ```
+*NOTE*: You are likely to re-produce the paper perforamnce in table 3 line 5. 
 
 + it adopts general similarity measure function with three negative videos and extend pool size 1000:   
 ```
@@ -102,7 +103,7 @@ bash scripts/train_sharednorm_exclusive.sh exclusive_extend1000_neg3 0 \
 --use_extend_pool 1000 --neg_video_num 3 --bsz 16
 ```
 
-
+*NOTE*: The training has randomness when we adopt shared normalization training objective, because we randomly sample negative videos via an adpative pool size. You may not get the exact performance shown in paper.
 
 2 .  CONQUER inference
 
@@ -118,7 +119,7 @@ By default, this code evaluates all the 3 tasks (VCMR, SVMR, VR), you can change
 by appending option, e.g. `--tasks VCMR VR` where only VCMR and VR are evaluated. 
 
 
-Below is one example of inference CONQUER which produce the best performance on paper.
+Below is one example of inference CONQUER which produce the best performance shown in paper.
 
 2.1. Download the trained model [tvr-conquer_general_paper_performance.tar.gz](https://drive.google.com/file/d/1ylKpgtkXzxPhko9RKpshCKdxA6Lw5zYj/view?usp=sharing) (173 MB). 
 After downloading the trained model, extract it to the current directory:
@@ -139,8 +140,8 @@ If you find this code useful for your research, please cite our paper:
 ```
 @inproceedings{hou2020conquer,
   title={CONQUER: Contextual Query-aware Ranking for Video Corpus Moment Retrieval},
-  author={Zhijian Hou, Chong-Wah Ngo, Wing-Kwong Chan},
-  booktitle={MultiMedia},
+  author={Zhijian, Hou and  Chong-Wah, Ngo and Wing-Kwong Chan},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
   year={2021}
 }
 ```
