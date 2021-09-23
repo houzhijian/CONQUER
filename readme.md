@@ -99,7 +99,7 @@ bash scripts/train_sharednorm_disjoint.sh disjoint_extend1000_neg3 0 \
 + it adopts exclusive similarity measure function with three negative videos and extend pool size 1000:   
 ```
 bash scripts/train_sharednorm_exclusive_pretrain.sh exclusive_pretrain_extend1000_neg3 0 \
---use_extend_pool 1000 --neg_video_num 3 --bsz 16 --encoder_pretrain_ckpt_filepath path/to/first_stage_trained_model/model.ckpt
+--use_extend_pool 1000 --neg_video_num 3 --bsz 16 --encoder_pretrain_ckpt_filepath YOUR_DATA_STORAGE_PATH/first_stage_trained_model/model.ckpt
 ```
 
 *NOTE*: The training has randomness when we adopt shared normalization training objective, because we randomly sample negative videos via an adpative pool size. You will witness performance difference each time.
