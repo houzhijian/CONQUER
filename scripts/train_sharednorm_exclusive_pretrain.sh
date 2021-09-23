@@ -5,7 +5,7 @@ exp_id=$1
 device_id=$2
 
 CUDA_VISIBLE_DEVICES=${device_id} python train.py \
---dataset_config config/mercury_tvr_data_config.json \
+--dataset_config config/tvr_data_config.json \
 --model_config config/model_config.json \
 --stop_task VCMR \
 --eval_tasks_at_training VCMR SVMR VR \
