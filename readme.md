@@ -83,7 +83,6 @@ Below are four examples of training CONQUER when
 ```
 bash scripts/train_general.sh general 0 
 ```
-*NOTE*: You are likely to re-produce the paper perforamnce in table 3 line 5. 
 
 + it adopts general similarity measure function with three negative videos and extend pool size 1000:   
 ```
@@ -103,7 +102,7 @@ bash scripts/train_sharednorm_exclusive_pretrain.sh exclusive_pretrain_extend100
 --use_extend_pool 1000 --neg_video_num 3 --bsz 16 --encoder_pretrain_ckpt_filepath path/to/first_stage_trained_model/model.ckpt
 ```
 
-*NOTE*: The training has randomness when we adopt shared normalization training objective, because we randomly sample negative videos via an adpative pool size. You may not get the exact performance shown in paper.
+*NOTE*: The training has randomness when we adopt shared normalization training objective, because we randomly sample negative videos via an adpative pool size. You will witness performance difference each time.
 
 2 .  CONQUER inference
 
